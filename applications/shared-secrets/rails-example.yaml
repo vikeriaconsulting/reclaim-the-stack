@@ -1,0 +1,16 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: rails-example
+  namespace: default
+spec:
+  encryptedData:
+    SECRET_KEY_BASE: AgBKKC+Kol2qoaM9e3MGvxWofE+v3qxdIU9epRPdEYkdkG9J4G6C25OiwQpEzYoA9CFrt42hJgYVgD/TIauvMPvFrTBo24pj+KdSTo6MbTwGLk0ordP+pCLi/heAI8MgJ4hXAX0lfMTUOpUyQm9PFC2V0yUA5OkR8Peclamn3OpprQGO4kUzRmMzIc1rbj4ubNuEclcDtJJfzi3NwFZnIXqswCwQv/RET6F38NNbfwSgAX977rrSkfdPoqqqmlTQMcMyXZsX5J9L5sSUE4vxARir4+YWg6xMU/Z5Y7gW9SPamabjhFnqTx6tdB/T2SYs+EymXqQ2Py0CAdFPMSAhi74uTg+TEXONzqwclPhd+Hs6f7P8bs/M+56EGPkq62DF/eNOLwmTlHczdkY6kVlrv5xJG1R1t14BnQByooScHRS/shj8XeIDqpbzPKn8tVu7OtXi2sN/N0N6C83rRPCXEXjQmD193wovR7LFC/1Oivxzyk7M0Z1BYOp6Uh6464MrmRsdU5/5U2jCJpiVnYTjFz66YIGmrHI09xW4NgjKlNSKx7HJ+/fOWg736qS89rRZAQRQkQXNq1joujditALHQ8fBeBYoFI8QFZiFft7j5TnO6wFPziDA6yFcOnZ95FBchyTRPqt1+66OfU2zjtceKv8KpCLLTgKjdvIUmPZq8mmgMfaK+aCtVN5Xkzmm6I1FlXcoZYTU6YWafWwHsmPbGNXnfzd2qw==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: rails-example
+      namespace: default
+    type: opaque
