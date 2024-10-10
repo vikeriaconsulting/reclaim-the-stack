@@ -1,4 +1,4 @@
-image: docker pull reclaimthestack/rails-example:latest
+image: reclaimthestack/rails-example:latest
 deployments:
   web:
     replicas: 1
