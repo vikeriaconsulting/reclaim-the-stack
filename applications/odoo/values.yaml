@@ -10,7 +10,7 @@ deployments:
         value: "2"
     # readinessProbePath: /up # when this path returns 200 the pod will be considered ready
     port: 8069
-    command: entrypoint
+    command: odoo
 resources:
   postgres:
     replicas: 2
