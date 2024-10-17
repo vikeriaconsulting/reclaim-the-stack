@@ -37,6 +37,6 @@ resources:
 #   - secretRef:
 #       name: odoo # Create a dedicated application secret with k secrets:create odoo
 env:
-  - { name: HOST, value: {{ .Chart.Name }} }
+  - { name: HOST, value: "odoo" }
   - { name: USER, value: "postgres"}
   - { name: PASSWORD, valueFrom: { secretKeyRef: { name: odoo-app, key: password } } }
