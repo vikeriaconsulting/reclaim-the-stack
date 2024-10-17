@@ -9,6 +9,8 @@ no-autoupdate: true
 # - hostname: <application>.example.com
 #   service: http://<application>-web
 ingress:
+  - hostname: odoo.vikeria.it
+    service: http://odoo-web
   - hostname: rails-example.vikeria.it
     service: http://rails-example-web
   - hostname: argocd.vikeria.it
