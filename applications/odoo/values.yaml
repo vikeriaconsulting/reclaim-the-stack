@@ -8,6 +8,9 @@ deployments:
     env:
       - name: WEB_CONCURRENCY
         value: "2"
+      - { name: HOST, valueFrom: { secretKeyRef: { name: odoo-app, key: host } } }
+      - { name: USER, valueFrom: { secretKeyRef: { name: odoo-app, key: user } } }
+      - { name: PASSWORD, valueFrom: { secretKeyRef: { name: odoo-app, key: password } } }
     # readinessProbePath: /up # when this path returns 200 the pod will be considered ready
     port: 8069
     command: odoo
