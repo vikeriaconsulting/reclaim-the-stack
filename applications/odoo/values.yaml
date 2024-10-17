@@ -33,9 +33,9 @@ resources:
       max_wal_size: 4GB
       pg_stat_statements.max: "10000"
       pg_stat_statements.track: top
-envFrom:
-  - secretRef:
-      name: odoo # Create a dedicated application secret with k secrets:create odoo
+# envFrom:
+#   - secretRef:
+#       name: odoo # Create a dedicated application secret with k secrets:create odoo
 env:
   - { name: HOST, valueFrom: { secretKeyRef: { name: odoo-app, key: uri } } }
   - { name: USER, value: "postgres"}
