@@ -37,6 +37,6 @@ resources:
 #   - secretRef:
 #       name: odoo # Create a dedicated application secret with k secrets:create odoo
 env:
-  - { name: HOST, value: "odoo" }
-  - { name: USER, value: "postgres"}
+  - { name: HOST, valueFrom: { secretKeyRef: { name: odoo-app, key: host } } }
+  - { name: USER, valueFrom: { secretKeyRef: { name: odoo-app, key: user } } }
   - { name: PASSWORD, valueFrom: { secretKeyRef: { name: odoo-app, key: password } } }
